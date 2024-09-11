@@ -8,13 +8,12 @@ package hw0;
  * @author Dickinson College
  * @version January 2024
  */
-
 public class SpaceAlien {
     // the name of the alien's home planet
-    private String homePlanet;
+    protected String homePlanet;
 
     // Distance of the home planet from earth, in light years
-    private double distanceFromEarth;
+    protected double distanceFromEarth;
 
     public SpaceAlien(String homePlanet, double distanceFromEarth) {
         this.homePlanet = homePlanet;
@@ -22,12 +21,12 @@ public class SpaceAlien {
     }
 
     public void doGreeting() {
-        System.out.println("Greetings form planet " + homePlanet + ", "
+        System.out.println("Greetings from planet " + homePlanet + ", "
                 + distanceFromEarth + " light years away");
     }
 
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         SpaceAlien descolada = new SpaceAlien("Lusitania", 42);
         descolada.doGreeting();
-    }
+    }*/
 }
